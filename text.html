@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="./text.css">
+    <title>Text Tool</title>
+</head>
+<body>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-background-muted uk-padding uk-text-left uk-text-large">Text Tool</div>
+        </div>
+    </div>
+    <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea></div>
+        <div class="uk-width-1-4"></div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-background-muted">順序関係</div>
+        </div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><button class="uk-button uk-button-default uk-width-1-1">昇順ソート</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">降順ソート</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">行順を上下逆にする</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">重複行削除</button></div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-background-muted">テキスト処理</div>
+        </div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><button class="uk-button uk-button-default uk-width-1-1">前後の空白を削除</button></div>
+    </div>
+    <div class="uk-form-horizontal">
+        <div>
+            <label class="uk-form-label uk-text-center" for="form-horizontal-text">先頭に文字を追加</label>
+            <div class="uk-form-controls">
+                <div id="form-horizontal-text" class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
+                    <div><input class="uk-input" type="text" placeholder="Some text..."></div>
+                    <div><button class="uk-button uk-button-default">追加</button></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label class="uk-form-label uk-text-center" for="form-horizontal-text">末尾に文字を追加</label>
+            <div class="uk-form-controls">
+                <div id="form-horizontal-text" class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
+                    <div><input class="uk-input" type="text" placeholder="Some text..."></div>
+                    <div><button class="uk-button uk-button-default">追加</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><div class="uk-background-muted">解析関係</div></div>
+    </div>
+    <div class="uk-form-horizontal">
+        <div>
+            <label class="uk-form-label uk-text-center" for="form-horizontal-text">検索</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Some text...">
+            </div>
+        </div>
+        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+            <div><div class="uk-background-muted">置換</div></div>
+        </div>
+        <div>
+            <label class="uk-form-label uk-text-center" for="form-horizontal-text">正規表現</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Some text...">
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+                    <div>
+                        <textarea class="uk-textarea" rows="5" placeholder="Result..." disabled></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><div class="uk-background-muted">変換関係</div></div>
+    </div>
+</body>
+</html>
