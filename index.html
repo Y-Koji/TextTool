@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="./text.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Text Tool</title>
 </head>
 <body>
@@ -23,6 +23,19 @@
     </div>
     <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
         <div>
+            <div class="uk-background-muted">選択</div>
+        </div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><button class="uk-button uk-button-default uk-width-1-1">全選択</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">全選択解除</button></div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><input class="uk-input uk-number" type="number" placeholder="N行目をハイライト" min="0" /></div>
+        <div><input class="uk-input uk-number" type="number" placeholder="N列目をハイライト(CSV)" min="0" /></div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
             <div class="uk-background-muted">順序関係</div>
         </div>
     </div>
@@ -33,12 +46,25 @@
         <div><button class="uk-button uk-button-default uk-width-1-1">重複行削除</button></div>
     </div>
     <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><button class="uk-button uk-button-default uk-width-1-1">左右を逆順にする</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">行列変換(CSV)</button></div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
         <div>
             <div class="uk-background-muted">テキスト処理</div>
         </div>
     </div>
     <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-        <div><button class="uk-button uk-button-default uk-width-1-1">前後の空白を削除</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">先頭の空白を削除</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">末尾の空白を削除</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">Json整形</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">Json圧縮</button></div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><button class="uk-button uk-button-default uk-width-1-1">Base64 Encode</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">Base64 Decode</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">URI Encode</button></div>
+        <div><button class="uk-button uk-button-default uk-width-1-1">URI Decode</button></div>
     </div>
     <div class="uk-form-horizontal">
         <div>
@@ -85,8 +111,6 @@
             </div>
         </div>
     </div>
-    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-        <div><div class="uk-background-muted">変換関係</div></div>
-    </div>
+    <!-- テンプレート プロセッサ -->
 </body>
 </html>
